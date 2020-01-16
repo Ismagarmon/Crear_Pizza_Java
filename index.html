@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo nuevos controles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+  <script>
+    (function ($) {
+      $(function () {
+        // Plugin initialization
+        $('select').not('.disabled').formSelect();
+      });
+    })(jQuery); // end of jQuery name space
+  </script>
+  <link href="CSS/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="div_1">
+   <h1>Crea tu pizza</h1>
+   <p>Crea tu pizza!</p>
+   <p>Diviértete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que más te gustan. Ponle nombre a tu receta y guárdala para hacer tu <br> próximo pedido más rápido y fácil.</p>
+  </div>
+  <div id="div_2">
+  <div class="row">
+  <br>
+  <br>
+    <div class="col s12 m4 l3 yellow">
+      <p>Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
+        y 3 en una pantalla grande (l3)</p>
+    </div>
+    <br>
+    <br>
+    <form class="col s12">
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>¿Cómo la quieres?</label>
+      </div>
+
+      <div class="row "></div> <!-- linea en blanco -->
+      <div>
+      <div class="col l3">
+        <div class="col l3">
+        <label>
+          <input name="group1" type="radio" checked />
+          <span>Sin salsa</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Salsa barbacoa</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input class="with-gap" name="group1" type="radio" />
+          <span>Salsa de tomate</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Crema fresca</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Crema fresca y barbacoa</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Salsa Bourbon (0% alcohol)</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Salsa barbacoa Texas</span>
+        </label>
+      </div>
+      <div class="col l3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Salsa barbacoa Kansas</span>
+        </label>
+      </div>
+    </div>
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/aceitunas.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Aceitunas negras</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/baconcrispy.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Bacon Crispy</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/pollobuffalo.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Pollo Bufalo</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/anchoas.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Anchoas</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/atun.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Atún</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/bacon.png">
+      </div>      
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Bacon</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/cebolla.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Cebolla</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/champinon.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Champiñón</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/jamon.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>York</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/jamon_serrano.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Jamón Serrano</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/maiz.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Maíz</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/pepperoni.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Pepperoni</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/pimiento.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Pimiento verde</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/pina.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Piña</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/pollo.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Pollo a la parrilla</span>
+        </label>
+
+      </div>
+
+      <div class="col l3">
+
+        <img class="responsive-img" src="Imagenes/ternera.png">
+      </div>
+
+      <div class="col l3">
+
+        <label>
+          <input type="checkbox" />
+          <span>Ternera especiada</span>
+        </label>
+      </div>
+      </div>
+
+      <div class="row "></div> <!-- linea en blanco -->
+      <div class="col s4">
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+          
+        </button>
+
+      </div>
+      
+    </form>
+  </div>
+
+
+</div>
+</body>
+
+</html>
